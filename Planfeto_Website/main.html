@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="js/script.js" defer></script>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planfeto Generator 0.1</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu-bg">
+            <div class="menu">
+                <div class="menu-logo">
+                    <a href="main.html"><img src="imagens/catLogo.png" class="logo"></a>
+                </div> <!-- .menu-logo -->
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a class="nav-link">Login</a></li>
+                        <li><a class="nav-link">Cadastre-se</a></li>
+                    </ul> <!-- .nav-list -->
+
+                </nav> <!-- .nav -->
+
+            </div> <!-- .menu -->
+
+        </div> <!-- .menu-bg -->
+    </header> <!-- header -->
+
+    <div class="workstation">
+
+        <div class="lateral-bar">
+            <div class="background-option">
+                <button id="verde" onclick="changeBackground('green')">Verde</button>
+                <button id="azul" onclick="changeBackground('blue')">Azul</button>
+                <button id="vermelho" onclick="changeBackground('red')">Vermelho</button>
+                <button id="img1" onclick="changeImage('url(imagens/720p_image.jpg)')">Imagem 1</button>
+                <button id="img2" onclick="changeImage('url(imagens/1080p_image.jpg)')">Imagem 2</button>
+                <button id="img3" onclick="changeImage('url(imagens/4k_image.jpg)')">Imagem 3</button>
+            
+            </div> <!-- .background-option -->
+        </div> <!-- .lateral-bar -->
+
+        <div class="preview">
+            <div class="panfleto-full">
+                <div class="panfleto-head">
+                </div> <!-- .panfleto-head -->
+                <div class="panfleto-main">
+                </div> <!-- .panfleto-main -->
+                <div class="panfleto-foot">
+                </div> <!-- .panfleto-foot -->
+
+            </div> <!-- .panfleto-full -->
+        </div> <!-- .preview -->
+
+    </div> <!-- .workstation -->
+</body>
+
+</html>

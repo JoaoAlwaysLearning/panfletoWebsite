@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	/*********************/ 
+	/*Isso serve para fazer as caixas/div's
+	/*incluirem o padding e o border no calculo
+	/*do tamanho da div já, só isso
+	/*********************/
+}
+
+/**********************************/
+/* 0. Variáveis
+/* 1. Estilos gerais
+/* 2. Header
+/* 3. Barra lateral
+/* 4. Preview
+/**********************************/
+
+/**********************************/
+/* 0. Variáveis
+/**********************************/
+
+:root {
+	--ff-primary: "Nunito", Helvetica, Arial, sans-serif;
+
+	--background-color: #F5F5F5;
+	--primary-color: #273d47;
+	--secondary-color: #a18e8e;
+	--contrast-color: #312828;
+}
+
+/**********************************/
+/* 1. Estilos gerais
+/**********************************/
+
+body {
+	background-color: var(--background-color);
+	font-family: var(--ff-primary);
+}
+
+a,
+a:hover,
+a:active,
+a:link,
+a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+nav,
+ul,
+li {
+	list-style-type: none;
+}
+
+.workstation {
+	display: flex;
+	flex-direction: row;
+}
+
+/**********************************/
+/* 2. Header
+/**********************************/
+
+header {
+	background-color: var(--background-color);
+	border-bottom: 3px solid var(--contrast-color);
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 960px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+
+.logo {
+	max-width: 100px;
+	max-height: 100px;
+}
+
+.menu-logo {
+	margin: 10px;
+}
+
+.nav-list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+}
+
+.nav-link {
+	padding: 15px 25px;
+	margin-right: 15px;
+	border: solid 1px var(--contrast-color);
+	border-radius: 15px;
+	background-color: var(--primary-color);
+	color: var(--background-color);
+}
+
+/**********************************/
+/* 3. Barra lateral
+/**********************************/
+
+.lateral-bar {
+	min-width: 400px;
+	min-height: 600px;
+	background-color: var(--primary-color);
+	border: 3px solid var(--contrast-color);
+}
+.background-option {
+	display: flex;
+}
+
+/**********************************/
+/* 4. Preview
+/**********************************/
+
+.workstation{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.preview{ 
+	background-color: var(--secondary-color);
+	border: 3px solid var(--contrast-color);
+	flex: 1 1 auto; /* faz a div preencher a pagina */	
+}
